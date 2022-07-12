@@ -15,6 +15,7 @@
 	text-rendering:optimizeLegibility;
 	--blanco:#FFFFFF;
 	--background:#4286f4;
+	--background-boton: #0f4f97;
 	--background2: #eeeeee;
 	--primario:#d1d1d1;
 	--secundario:#575656;
@@ -41,9 +42,9 @@ body {
 	line-height:30px;
 	/*color: var(--secundario);
 	background: var(--background2);*/
-	background: #373B44;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #373B44; 
+	background: -webkit-linear-gradient(to top, #0f4f97, #373B44); 
+	background: linear-gradient(to top, #0f4f97, #373B44);
 
 
 	@media screen {
@@ -110,7 +111,7 @@ body {
 }
 
 #contact h3 {
-	color: #3a589e;
+	color: #0f4f97;
 	display: block;
 	font-size: 3rem;
 	font-weight: 400;
@@ -163,7 +164,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background: var(--background);
+	background: var(--background-boton);
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -171,7 +172,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background:var(--background);
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
