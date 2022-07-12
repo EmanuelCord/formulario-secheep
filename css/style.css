@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	/*font-family: 'Montserrat', sans-serif;*/
+	/*font-family: 'Montserrat Alternates', sans-serif;*/
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smooth:antialiased;
+	text-rendering:optimizeLegibility;
+	--blanco:#FFFFFF;
+	--background:#4286f4;
+	--background2: #eeeeee;
+	--primario:#d1d1d1;
+	--secundario:#575656;
+	--terciario:#13a538;
+
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px*/
+}
+
+body {
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	max-width: 768px;
+	min-width: fit-content;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:300;
+	font-size: 16px;
+	line-height:30px;
+	/*color: var(--secundario);
+	background: var(--background2);*/
+	background: #373B44;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	@media screen {
+		max-width: 1200px; {transform: scale(0.7)}
+	}
+	@media screen {
+		max-width: 1000px; {transform: scale(0.6);}		
+	}
+	@media screen {
+		max-width: 800px; {transform: scale(0.5);}
+	}
+	@media screen {
+		max-width: 667px; {transform: scale(0.3);}
+	}
+}
+
+.img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	padding-top: 1vw;
+	padding-bottom: 2vw;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	border-radius: 10vw;
+	max-width: 780px;
+	min-width: fit-content;
+	width:100%;
+	margin:0 auto;
+
+	@media screen {
+		max-width: 1200px; {transform: scale(0.7)}
+	}
+	@media screen {
+		max-width: 1000px; {transform: scale(0.6);}		
+	}
+	@media screen {
+		max-width: 800px; {transform: scale(0.5);}
+	}
+	@media screen {
+		max-width: 667px; {transform: scale(0.3);}
+	}
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 1.2rem/1.6rem 'Montserrat', sans-serif; }
+
+#contact {
+	/*box-shadow:
+		5px 5px 5px var(--background),
+		-5px -5px 5px var(--background);*/
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(55,59,68,0.3);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(55,59,68,0.3);
+	box-shadow: 5px 5px 20px 0px rgba(55,59,68,0.3);
+	overflow: hidden;
+	border-radius: 1vw;
+	background:var(--blanco);
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #3a589e;
+	display: block;
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:1.3rem;
+}
+
+label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:600;
+	font-size: 1.4rem;
+	line-height:30px;
+	color:#777;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: var(--background);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size: 1.5rem;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.container h3 {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 700 !important; 
+	font-size: 1rem;
+	line-height:30px;
+}

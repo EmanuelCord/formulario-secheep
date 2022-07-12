@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Libreria CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize" type="text/css">
+
+    <!-- Libreria fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Libreria scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+      </script>
+
+    <title>Secheep | Adhesión Factura Digital </title>
+</head>
+<body>
+    <!-- Comienza Formulario -->
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <img src="img/logo.png" alt="logo" class="img">
+          <h3>Formulario de adhesión a factura digital</h3>
+          <h4>Nota: Los campos con el simbolo * son obligatorios</h4>
+          <fieldset>
+            <label for="nref">Numero de referencia.</label>
+            <input placeholder="Numero de referencia *" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <label for="correo">Correo electrónico</label>
+            <input placeholder="Correo electrónico principal *" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <label for="csec">correo electrónico secundario</label>
+            <input placeholder="Correo electrónico secundario " type="email" tabindex="3">
+          </fieldset>
+          <fieldset>
+            <label for="telefono">Número de teléfono</label>
+            <input placeholder="Número de teléfono" type="tel" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <label for="termititle">Términos y condiciones</label><br>
+            <input type="checkbox" tabindex="5" required>
+            <label for="termi">Acepto los Términos de servicios. Los datos completados se procesarán de acuerdo a ellos.</label>
+          </fieldset>
+          <!--Inicio Recapcha-->
+          <fieldset>
+            <label for="verif">Verificar *</label><br>
+            <div class="g-recaptcha" data-sitekey="6Lcc9M0gAAAAAO9ZqDxplYaTM--6LZ9TbNNUGjgz"></div>
+          </fieldset>
+          <!-- Fin Recapcha -->
+          </fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+          </fieldset>
+        </form>      
+      </div>
+    <!-- Termina Formulario -->
+</body>
+</html>
