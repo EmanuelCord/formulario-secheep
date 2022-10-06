@@ -414,3 +414,34 @@ button[type="submit"] {
 		font-size: 1.3rem;
 	}
 }
+
+/* Confirmacion */
+
+.confirmacion-background {
+	background-image: url(../img/background-confirmacionpc.svg);
+	background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	width:900px;
+	height: 615px;
+	margin:0 auto;
+	padding: 0 auto;
+}
+
+@media (max-width: 768px){
+	.confirmacion-background {
+		background-image: url(../img/background-confirmaciontablet.svg);
+		background-repeat: no-repeat;
+		height: 615px;
+		width: 767px;
+	}
+}
+
+@media (max-width: 425px) {
+	.confirmacion-background {
+		background-image: url(../img/background-confirmacionphone.svg);
+		height: 375px;
+		width: 100%;
+	}
+}
