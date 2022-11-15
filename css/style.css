@@ -424,7 +424,7 @@ button[type="submit"] {
     align-items: center;
     position: relative;
 	width:900px;
-	height: 615px;
+	height: 680px;
 	margin:0 auto;
 	padding: 0 auto;
 }
@@ -441,7 +441,7 @@ button[type="submit"] {
 @media (max-width: 425px) {
 	.confirmacion-background {
 		background-image: url(../img/background-confirmacionphone.svg);
-		height: 375px;
+		height: 500px;
 		width: 100%;
 	}
 }
