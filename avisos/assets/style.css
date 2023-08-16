@@ -84,8 +84,9 @@ html {
 
 @media (max-width: 430px) {
     .secction {
-        padding-top: 20%;
-        padding-bottom: 20%;
+        width: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
@@ -113,6 +114,7 @@ html {
 
 @media (max-width: 430px) {
     .text {
+        width: 290px;
         display: flex;
         flex-direction: column;
         justify-content: center;
